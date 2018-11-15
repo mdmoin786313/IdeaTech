@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images\ailogo.png">
+  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+  <script src="main.js"></script>
+</head>
+<body>
+<div class="back1">
+  <div class="header">
+    <a href=""><img src="images\ailogo.png" class="logo"><span style="position: relative;top: -1.5px;left: 5px;">IdeaTech</span></a>
+    <a href="">SignUp!</a>
+    <a href="">Login</a>
+    <a href="">Ideas</a>
+    <a href="">About</a>
+    <a href="">Services</a>
+    <a href="">Home</a>
+  </div>
+  <div class="back1_content">
+    <table cellpadding="30" align="center">
+      <tr>
+        <td>
+          <img src="images\airobot.png" height="430" width="270">
+        </td>
+        <td>
+          <h1>Time to Get Started!</h1>
+          <h2>Get Solutions for Every Programming Errors and Problems and also get Paid by solving problems and errors.</h2>
+          <a id="myBtn" class="get_started">Get Started &rarr;</a><br><br><br><br><br>
+        </td>
+      </tr>
+    </table>
+    <div class="signup" id="signup">
+      <div class="signup_modal">
+        <a href="#" class="close">&times;</a>
+        <div class="v_line"></div>
+        <table cellpadding="10" style="width:50%;float: left;">
+          <tr>
+            <td colspan="2"><h2 style="font-family: 'Aclonica';">SignUp</h2></td>
+          </tr>
+          <tr>
+            <td><h3>Name</h3></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><h3>E-mail</h3></td>
+            <td><input type="email"></td>
+          </tr>
+          <tr>
+            <td><h3>Phone</h3></td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td><h3>Interest</h3></td>
+            <td>
+              <select>
+                <option>Web Programming</option>
+                <option>Artificial Intelligence</option>
+                <option>Application Programming</option>
+                <option>Ethical Hacking</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="" class="signup_now">SignUp!</a></td>
+          </tr>
+        </table>
+        <table cellpadding="10" style="width: 50%;float: left;">
+          <tr>
+            <td colspan="2"><h2 style="font-family: 'Aclonica';">Login</h2></td>
+          </tr>
+          <tr>
+            <td><h3>Username</h3></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><h3>Password</h3></td>
+            <td><input type="password"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="" class="signup_now">Login</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script>
+    var signup = document.getElementById("signup");
+    var btn = document.getElementById("myBtn");
+    var close = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+      signup.style.display = "block";
+    };
+    window.onclick = function(event) {
+      if(event.target == signup) {
+        signup.style.display = "none";
+      }
+    };
+    close.onclick = function () {
+      signup.style.display = "none";
+    }
+  </script>
+</div>
+<div class="back2">
+  <video autoplay muted loop>
+    <source src="images\back2video.mp4" type="video/mp4">
+  </video>
+  <div class="back2_content">
+  <h1>Solve Your Queries About</h1>
+  <div class="line" align="center"></div>
+  <table cellpadding="20">
+    <tr>
+      <td>
+        <div class="back2_circle">
+          <h1>Artificial</h1><br><br>
+          <h3>Intelligence</h3>
+        </div>
+      </td>
+      <td>
+        <div class="back2_circle">
+          <h1>Programming</h1><br><br>
+          <h3>Languages</h3>
+        </div>
+      </td>
+      <td>
+        <div class="back2_circle">
+          <h1>Technology</h1><br><br>
+          <h3>Updates</h3>
+        </div>
+      </td>
+      <td>
+        <div class="back2_circle">
+          <h1>Ethical</h1><br><br>
+          <h3>Hacking</h3>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </div>
+</div>
+<div class="back3">
+  <h1>Solve And Earn!</h1>
+  <div class="line2"></div>
+  <div class="back3_content">
+    <div class="slide fade">
+      <img src="images/probgif.gif" class="back3_img">
+      <h2>Solve Programming Errors And Algorithms and Earn Money.</h2>
+    </div>
+    <div class="slide fade">
+      <img src="images/ai.gif" class="back3_img">
+      <h2>Take A.I. Solving Challenges and Earn Money.</h2>
+    </div>
+    <div class="slide fade">
+      <img src="images/idea.gif" class="back3_img">
+      <h2>Share Ideas about Technology Updates and Earn Money.</h2>
+    </div>
+    <div class="slide fade">
+      <img src="images/hacker.gif" class="back3_img">
+      <h2>Hack into our Testing Servers and Earn Prizes.</h2>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000);
+}
+  </script>
+</div>
+<div class="back4">
+  <div class="back4_content">
+    <h1>Participate</h1>
+    <div class="line3"></div>
+    <table cellpadding="35" align="center">
+      <tr>
+        <td>
+          <div class="pro_circle">
+            <br><h1>PRO</h1>
+          </div>
+        </td>
+        <td align="left">
+          <ul type="disc">
+            <li><h2>Become a PRO Programmer and Hacker with Us.</h2></li>
+            <li><h2>Learn Artificial Intelligence like Never Before!</h2></li>
+            <li><h2>Research with Apple and Microsoft via our sources.</h2></li>
+            <li><h2>Work on Projects with our Experts.</h2></li>
+            <li><h2>Get Fast Answers for your Queries.</h2></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="footer">
+  <h3>&copy; 2018 IdeaTech.com. All Rights Reserved.</h3>
+  <a href="">IdeaTech.com&reg;</a>
+  <h4>Site Best Viewed in 1366&times;786 in Google Chrome, Mozilla Firefox, Vivaldi, Netscape Navigator, IE and Safari.</h4>
+</div>
+</body>
+</html>

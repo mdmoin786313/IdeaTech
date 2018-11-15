@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  font-family: 'ABeeZee';
+}
+.back1 {
+  position: relative;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("images/back1.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  height: 39.5rem;
+  color: white;
+  z-index: 10;
+}
+.back1 .header {
+  margin: 0;
+  padding: 1.2rem;
+}
+.back1 .header a:first-child {
+  text-decoration: none;
+  color: lightblue;
+  font-size: 1.8rem;
+  font-family: 'Aclonica';
+  float: left;
+}
+.back1 .header a:first-child:hover {
+  color: white;
+}
+.back1 .header a:not(:first-child) {
+  float: right;
+  font-family: 'ABeeZee';
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  margin-right: 2.7rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 3px solid transparent;
+  transition: 150ms;
+}
+.back1 .header a:not(:first-child):hover {
+  color: lightblue;
+  padding-bottom: .5rem;
+  border-bottom: 3px solid lightblue;
+  transition: 150ms;
+}
+.back1 .header a:last-child {
+  color: lightblue;
+  padding-bottom: .5rem;
+  border-bottom: 3px solid lightblue;
+}
+.back1 .logo {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.back1 .back1_content {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.back1 .back1_content table h1 {
+  font-size: 3rem;
+  color: lightblue;
+}
+.back1 .back1_content table {
+  width: 90%;
+}
+.back1 .back1_content .get_started {
+  padding: 1.7rem;
+  position: relative;
+  top: 2.5rem;
+  width: 25rem;
+  border: 5px solid lightblue;
+  border-right-color: transparent;
+  text-decoration: none;
+  color: lightblue;
+  transition: 80ms;
+  z-index: 100;
+  cursor: pointer;
+}
+.back1 .back1_content .get_started:hover {
+  background: lightblue;
+  color: black;
+  z-index: 100;
+  transition: 80ms;
+}
+.back1 .back1_content .get_started::after {
+  content: "";
+  background-color: transparent;
+  border: 5px solid lightblue;
+  border-left-color: transparent;
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: -17px;
+  top: -5px;
+  width: 60px;
+  transform: skewX(-10deg);
+  transition: 80ms;
+  z-index: -1;
+}
+.back1 .back1_content .get_started:hover:after {
+  background: lightblue;
+  z-index: -1;
+  transition: 80ms;
+}
+.back1 .back1_content .signup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+  z-index: 5000;
+  display: none;
+}
+.back1 .back1_content .signup .signup_modal {
+  position: relative;
+  top: 5%;
+  background: linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url("images/modal.jpg");
+  background-size: cover;
+  background-position: center center;
+  border: 5px solid lightblue;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  padding: 1.2rem;
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: .8s;
+  -webkit-animation-duration: .8s;
+}
+.back1 .back1_content .signup .signup_modal input, select {
+  width: 15rem;
+  padding: .6rem;
+  font-size: .9rem;
+  border: 2px solid lightblue;
+  background: rgba(0,0,0,0.9);
+  color: white;
+}
+.back1 .back1_content .signup .signup_modal .signup_now {
+  position: relative;
+  top: 2rem;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: lightblue;
+  font-size: 1.1rem;
+  border: 3px solid lightblue;
+  border-radius: 4px;
+  transition: 150ms;
+}
+.back1 .back1_content .signup .signup_modal .signup_now:hover {
+  transition: 150ms;
+  background: rgba(0,0,0,0.8);
+}
+.back1 .back1_content .signup .signup_modal .v_line {
+  position: absolute;
+  left: 50%;
+  border-left: 5px solid lightblue;
+  top: 0;
+  height: 100%;
+  margin-left: -3px;
+}
+.back1 .back1_content .signup .signup_modal .close {
+  position: relative;
+  top: -1rem;
+  right: 0;
+  font-size: 3rem;
+  float: right;
+  text-decoration: none;
+  color: lightblue;
+  cursor: pointer;
+}
+@keyframes slideUp {
+  from {
+    top: 1500px;
+    opacity: 0;
+  }
+  to {
+    top: 5%;
+    opacity: 1;
+  }
+}
+.back2 {
+  position: relative;
+  background: rgba(0,0,0,0.7);
+  background-repeat: no-repeat;
+  height: 39rem;
+  padding: 1rem;
+  color: lightblue;
+  text-align: center;
+}
+.back2 .line {
+  width: 27rem;
+  height: .2rem;
+  margin: auto;
+  color: black;
+  background: lightblue;
+  text-align: center;
+}
+.back2 .back2_circle {
+  position: relative;
+  top: 4rem;
+  width: 17rem;
+  height: 17rem;
+  padding: .5rem;
+  margin: auto;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), rgba(38, 38, 38, 0.8), rgba(0, 0, 0, 0.91));
+  border-radius: 50%;
+  border: 4px solid lightblue;
+  box-shadow: 0 6px 22px 0 rgba(0,0,0,0.8), 0 4px 20px 0 rgba(0,0,0,0.4);
+  display: inline-block;
+  color: lightblue;
+  opacity: .9;
+  z-index: 5;
+}
+.back2 .back2_circle h1{
+  position: relative;
+  top: 4.2rem;
+  font-size: 2.4rem;
+}
+.back2 video {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  right: 0;
+  bottom: 0;
+  filter: blur(3px);
+  z-index: 1;
+}
+.back2 .back2_content {
+  position: fixed;
+  top: 2rem;
+  width: 100%;
+  margin: auto;
+  z-index: 9;
+}
+.back2 .back2_content table {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.back3 {
+  position: relative;
+  height: 40rem;
+  padding: 1rem;
+  background: linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url("images/back3.jpg");
+  background-position: top;
+  background-size: cover;
+  color: lightblue;
+  text-align: center;
+  z-index: 25;
+}
+* {
+  box-sizing: border-box;
+}
+.back3 .back3_content {
+  position: relative;
+  top: 3rem;
+  max-width: 1000px;
+  margin: auto;
+  perspective: 1000px;
+}
+.back3 .back3_content .slide {
+  display: none;
+}
+.back3 .back3_content .slide .back3_img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.back3 .line2 {
+  width: 18rem;
+  height: .2rem;
+  margin: auto;
+  color: black;
+  background: lightblue;
+  text-align: center;
+}
+.back4 {
+  position: relative;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.91)), url("images/programmer.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 35rem;
+  padding: 1rem;
+  color: lightblue;
+  text-align: center;
+  z-index: 35;
+}
+.back4 .back4_content {
+  position: relative;
+  top: .2rem;
+}
+.back4 .line3 {
+  width: 12rem;
+  height: .2rem;
+  margin: auto;
+  color: black;
+  background: lightblue;
+  text-align: center;
+}
+.back4 table {
+  position: relative;
+  top: 2rem;
+}
+.back4 .pro_circle {
+  position: relative;
+  top: 0;
+  margin: auto;
+  width: 17rem;
+  height: 17rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px 0 lightblue, 0 0  40px 0 lightblue;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(0,0,0,0.96), rgba(0,0,0,0.2), rgba(0,0,0,0.96));
+  opacity: .9;
+}
+.back4 .pro_circle h1 {
+  font-size: 5rem;
+  font-family: 'Aldrich';
+}
+.footer {
+  position: relative;
+  height: 10rem;
+  padding: .5rem;
+  color: lightblue;
+  background: #090909;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  z-index: 40;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  transition: 150ms;
+}
+.footer a:hover {
+  color: lightblue;
+  transition: 150ms;
+}
